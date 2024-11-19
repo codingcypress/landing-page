@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header.hero {
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #cc5200;
+}
+
+.features {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.feature {
+  margin-bottom: 30px;
+}
+
+.feature img {
+  width: 100px;
+  margin: 10px auto;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.testimonials {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.signup {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#signup-form {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+#signup-form input, #signup-form button {
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#signup-form button {
+  background: #0044cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#signup-form button:hover {
+  background: #003399;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
