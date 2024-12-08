@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBERK Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MOBERK TECH SOLUTIONS</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Reliable Tech Solutions for UENR Students</h1>
+        <p>Fair prices, free delivery, and trusted services at your fingertips.</p>
+        <button onclick="scrollToForm()">Request a Service</button>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <img src="assets/icons/laptop-solid.svg" alt="Laptop Icon" width="30px">
+                <h3>Laptop Repairs</h3>
+                <p>From hardware fixes to software solutions.</p>
+            </div>
+            <div class="service">
+                <img src="assets/icons/phone-solid.svg" alt="Phone Icon" width="30px">
+                <h3>Phone Repairs</h3>
+                <p>Quick and reliable mobile repairs.</p>
+            </div>
+            <div class="service">
+                <img src="assets/icons/accessories-icon-png-9.jpg" alt="Accessories Icon" width="30px">
+                <h3>Accessories</h3>
+                <p>Affordable accessories delivered to your doorstep.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Welcome to <strong>MOBERK Tech Solutions</strong>, your trusted partner in navigating campus life with ease. Founded with the goal of making tech services accessible and fair, we are dedicated to serving UENR students, especially newcomers who may not yet know their way around.</p>
+            <p>At MOBERK, we specialize in:</p>
+            <ul>
+                <li><strong>Laptop Repairs:</strong> Whether it's a hardware issue or software glitch, we ensure your device is up and running in no time.</li>
+                <li><strong>Phone Repairs:</strong> Quick and efficient solutions for all your mobile needs.</li>
+                <li><strong>Accessories:</strong> Affordable and high-quality tech accessories delivered to your doorstep, free of charge.</li>
+            </ul>
+            <p>We strive to empower our peers through fair and innovative solutions, offering free delivery and seamless online booking via QR code. Experience the MOBERK difference today!</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="serviceForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Service Required:</label>
+            <select id="service" name="service">
+                <option value="laptop-repair">Laptop Repair</option>
+                <option value="phone-repair">Phone Repair</option>
+                <option value="accessory-purchase">Accessory Purchase</option>
+            </select>
+
+            <label for="message">Additional Details:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MOBERK Tech Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
